@@ -1,4 +1,7 @@
 #header{
   background-image: url("https://images.pexels.com/photos/4173251/pexels-photo-4173251.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
