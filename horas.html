@@ -30,13 +30,13 @@
             <a class="nav-link" href="perfil.html">Mi Perfil</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-success" href="#">Mis datos medicos</a>
+            <a class="nav-link" href="dmedicos.html">Mis datos medicos</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="cargas.html">Mis cargas</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="horas.html">Reserva horas</a>
+            <a class="nav-link text-success" href="horas.html">Reserva horas</a>
           </li>
         </ul>
         <form class="form-inline my-2 my-lg-0" action="index.html">
@@ -49,91 +49,130 @@
   <!--fin navbar-->
 
 
-
-
-  <div class="container my-5">
-    <section>
-      <br>
-      <h3 class="font-weight-bold black-text mb-4 pb-2 text-center display-4">Historial de consultas medicas</h3>
-      <hr class="w-header">
-      <p class="lead text-muted mx-auto mt-4 pt-2 mb-5 text-center">Aqui encontraras todo el historial de tus consultas
-        medicas.</p>
-      <div class="row">
-        <div class="col-md-12 col-lg-10 mx-auto mb-5">
-          <div class="accordion md-accordion" id="accordionEx" role="tablist" aria-multiselectable="true">
-            <div class="card border-top border-bottom-0 border-left border-right border-light">
-              <div class="card-header border-bottom border-light" role="tab" id="headingOne1">
-                <a data-toggle="collapse" data-parent="#accordionEx" href="#collapseOne1" aria-expanded="true"
-                  aria-controls="collapseOne1">
-                  <h5 class="black-text font-weight-normal mb-0">12-10-2020</h5>
-                </a>
-              </div>
-              <div id="collapseOne1" class="collapse show" role="tabpanel" aria-labelledby="headingOne1"
-                data-parent="#accordionEx">
-                <div class="card-body row">
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, harum beatae
-                    optio, ab maiores quidem repellendus dolor dignissimos ducimus, autem aspernatur distinctio quas
-                    nulla aliquam assumenda officiis. Impedit, ducimus unde.</p>
-                  <button type="button" class="btn btn-outline-primary col-md-4">Examenes</button>
-                </div>
-              </div>
-            </div>
-            <div class="card border-bottom-0 border-left border-right border-light">
-              <div class="card-header border-bottom border-light" role="tab" id="headingTwo2">
-                <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx" href="#collapseTwo2"
-                  aria-expanded="false" aria-controls="collapseTwo2">
-                  <h5 class="black-text font-weight-normal mb-0">14-09-2020</h5>
-                </a>
-              </div>
-              <div id="collapseTwo2" class="collapse" role="tabpanel" aria-labelledby="headingTwo2"
-                data-parent="#accordionEx">
-                <div class="card-body">
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, harum beatae
-                    optio, ab maiores quidem repellendus dolor dignissimos ducimus, autem aspernatur distinctio quas
-                    nulla aliquam assumenda officiis. Impedit, ducimus unde.</p>
-                  <button type="button" class="btn btn-outline-primary col-md-4">Examenes</button>
-                </div>
-              </div>
-            </div>
-            <div class="card border-bottom-0 border-left border-right border-light">
-              <div class="card-header border-bottom border-light" role="tab" id="headingTwo2">
-                <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx" href="#collapseTwo2"
-                  aria-expanded="false" aria-controls="collapseTwo2">
-                  <h5 class="black-text font-weight-normal mb-0">20-12-2019</h5>
-                </a>
-              </div>
-              <div id="collapseTwo2" class="collapse" role="tabpanel" aria-labelledby="headingTwo2"
-                data-parent="#accordionEx">
-                <div class="card-body">
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, harum beatae
-                    optio, ab maiores quidem repellendus dolor dignissimos ducimus, autem aspernatur distinctio quas
-                    nulla aliquam assumenda officiis. Impedit, ducimus unde.</p>
-                  <button type="button" class="btn btn-outline-primary col-md-4">Examenes</button>
-                </div>
-              </div>
-            </div>
-            <div class="card border-bottom-0 border-left border-right border-light">
-              <div class="card-header border-bottom border-light" role="tab" id="headingTwo2">
-                <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx" href="#collapseTwo2"
-                  aria-expanded="false" aria-controls="collapseTwo2">
-                  <h5 class="black-text font-weight-normal mb-0">01-12-2019</h5>
-                </a>
-              </div>
-              <div id="collapseTwo2" class="collapse" role="tabpanel" aria-labelledby="headingTwo2"
-                data-parent="#accordionEx">
-                <div class="card-body">
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, harum beatae
-                    optio, ab maiores quidem repellendus dolor dignissimos ducimus, autem aspernatur distinctio quas
-                    nulla aliquam assumenda officiis. Impedit, ducimus unde.</p>
-                  <button type="button" class="btn btn-outline-primary col-md-4">Examenes</button>
-                </div>
-              </div>
-            </div>
-          </div>
+  <div class="container my-5 py-5 z-depth-1">
+    <!--Section: Content-->
+    <section class="px-md-5 mx-md-5 text-center text-lg-left dark-grey-text">
+      <!--Grid row-->
+      <div class="row d-flex justify-content-center">
+        <div class="span12 col-md-6">
+          <table class="table-condensed table-bordered table-striped">
+            <thead>
+              <tr>
+                <th colspan="7">
+                  <span class="btn-group">
+                    <a class="btn"><i class="icon-chevron-left"></i></a>
+                    <a class="btn active">Octubre 2020</a>
+                    <a class="btn"><i class="icon-chevron-right"></i></a>
+                  </span>
+                </th>
+              </tr>
+              <tr>
+                <th>Lun</th>
+                <th>Mar</th>
+                <th>Mie</th>
+                <th>Jue</th>
+                <th>Vie</th>
+                <th>Sab</th>
+                <th>Dom</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>29</td>
+                <td>30</td>
+                <td>31</td>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td>6</td>
+                <td>7</td>
+                <td>8</td>
+                <td>9</td>
+                <td>10</td>
+                <td>11</td>
+              </tr>
+              <tr>
+                <td>12</td>
+                <td>13</td>
+                <td>14</td>
+                <td>15</td>
+                <td>16</td>
+                <td>17</td>
+                <td>18</td>
+              </tr>
+              <tr>
+                <td>19</td>
+                <td>20</td>
+                <td>21</td>
+                <td>22</td>
+                <td>23</td>
+                <td>24</td>
+                <td class="btn-primary"><strong>25</strong></td>
+              </tr>
+              <tr>
+                <td>26</td>
+                <td>27</td>
+                <td>28</td>
+                <td>29</td>
+                <td class="muted">1</td>
+                <td class="muted">2</td>
+                <td class="muted">3</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
+        <!--Grid column-->
+        <div class="col-md-6">
+          <!-- Default form contact -->
+          <form class="text-center" action="#!">
+            <h3 class="font-weight-bold mb-4">Pide una hora fácilmente aquí:</h3>
+            <!-- Name -->
+            <input type="text" id="defaultContactFormName" class="form-control mb-4" placeholder="Nombre y Apellido">
+            <!-- Email -->
+            <input type="email" id="defaultContactFormEmail" class="form-control mb-4" placeholder="RUT">
+            <!-- Subject -->
+            <label>Especialidad</label>
+            <select class="browser-default custom-select mb-4">
+              <option value="" disabled>Elije una opción</option>
+              <option value="1" selected>MEDICINA GENERAL</option>
+              <option value="2">MEDICO CIRUJANO</option>
+              <option value="3">NUTRICIONISTA</option>
+              <option value="4">PSICOLOGO</option>
+            </select>
+
+            <!-- Message -->
+            <div class="form-group">
+              <textarea class="form-control rounded-0" id="exampleFormControlTextarea2" rows="3"
+                placeholder="Correo electrónico / Número de contacto"></textarea>
+            </div>
+            <!-- Copy -->
+            <div class="custom-control custom-checkbox mb-4">
+              <input type="checkbox" class="custom-control-input" id="defaultContactFormCopy">
+              <label class="custom-control-label" for="defaultContactFormCopy">Quiero recibir una copia de mi
+                solicitud</label>
+              <h4>Seleccione su día a agendar:
+                <div class="container">
+                  <div class="row">
+                  </div>
+                </div>
+              </h4>
+            </div>
+            <!-- Send button -->
+            <button class="btn btn-info btn-block" type="submit">Pedir Hora</button>
+          </form>
+          <!-- Default form contact -->
+        </div>
+        <!--Grid column-->
       </div>
+      <!--Grid row-->
     </section>
+    <!--Section: Content-->
   </div>
+
   <!-- PUNTO 8 DEL TRABAJO/ Footer -->
   <footer class="page-footer font-small bg-light">
     <!-- Footer Links -->
@@ -234,7 +273,6 @@
     <!-- Copyright -->
   </footer>
   <!-- Fin Punto 8 proyecto / Footer -->
-
 
 
   <!--script boostrap-->

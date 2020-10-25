@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Cargas Familiares</title>
+  <link rel="stylesheet" href="css/cargas.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Varela+Round|Open+Sans">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <script src="js/cargas.js"></script>
+</head>
+
+<body>
+  <!--navbar-->
+  <div id="inicio">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+      <a class="navbar-brand text-success" href="home.html">Red de Salud</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+        aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="home.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="perfil.html">Mi Perfil</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="dmedicos.html">Mis datos medicos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-success" href="#">Mis cargas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="horas.html">Reserva horas</a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0" action="index.html">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Cerrar sesion</button>
+        </form>
+      </div>
+    </nav>
+  </div>
+  <br>
+  <!--fin navbar-->
+
+  <!--Editar cargas familiares-->
+  <div class="container jumbotron bg-white">
+    <div class="table-responsive">
+      <div class="table">
+        <div class="table-title">
+          <div class="row">
+            <div class="col-sm-8">
+              <h2>Mis cargas familiares</h2>
+            </div>
+            <div class="col-sm-4">
+              <button type="button" class="btn btn-info add-new"><strong class="fa fa-plus"></strong> Agregar
+                Carga</button>
+            </div>
+          </div>
+        </div>
+        <table class="table table-bordered">
+          <thead>
+            <tr class="bg-success text-light">
+              <th>Nombre</th>
+              <th>Rut</th>
+              <th>Parentesco</th>
+              <th>Admin</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Nombre Usuario</td>
+              <td>19.999.999-K</td>
+              <td>Titular</td>
+              <td>
+
+              </td>
+            </tr>
+            <tr>
+              <td>Nombre hijo</td>
+              <td>23.999.999-0</td>
+              <td>Hijo</td>
+              <td>
+                <a class="add" title="Add" data-toggle="tooltip"><span class="material-icons">&#xE03B;</span></a>
+                <a class="edit" title="Edit" data-toggle="tooltip"><span class="material-icons">&#xE254;</span></a>
+                <a class="delete" title="Delete" data-toggle="tooltip"><span class="material-icons">&#xE872;</span></a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+  <!-- PUNTO 8 DEL TRABAJO/ Footer -->
+  <footer class="page-footer font-small bg-light">
+    <!-- Footer Links -->
+    <div class="container text-center text-md-left">
+      <!-- Grid row -->
+      <div class="row">
+        <!-- Grid column -->
+        <div class="col-md-3 mx-auto">
+          <!-- Links -->
+          <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Centros de Atención</h5>
+          <ul class="list-unstyled">
+            <li>
+              <a href="#!">Hospital Barros Luco</a>
+            </li>
+            <li>
+              <a href="#!">Hospital Sotero del Rio</a>
+            </li>
+            <li>
+              <a href="#!">Clinica Las Condes</a>
+            </li>
+            <li>
+              <a href="#!">Clinica Tabancura</a>
+            </li>
+          </ul>
+        </div>
+        <!-- Grid column -->
+        <hr class="clearfix w-100 d-md-none">
+        <!-- Grid column -->
+        <div class="col-md-3 mx-auto">
+          <!-- Links -->
+          <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Ambulancias</h5>
+          <ul class="list-unstyled">
+            <li>
+              <a href="#!">HELP</a>
+            </li>
+            <li>
+              <a href="#!">U. C. Movil</a>
+            </li>
+            <li>
+              <a href="#!">ACHS</a>
+            </li>
+            <li>
+              <a href="#!">Mutual de Seguridad</a>
+            </li>
+          </ul>
+        </div>
+        <!-- Grid column -->
+        <hr class="clearfix w-100 d-md-none">
+        <!-- Grid column -->
+        <div class="col-md-3 mx-auto">
+          <!-- Links -->
+          <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Previsión de Salud</h5>
+          <ul class="list-unstyled">
+            <li>
+              <a href="#!">Fonasa</a>
+            </li>
+            <li>
+              <a href="#!">Isapre Colmena</a>
+            </li>
+            <li>
+              <a href="#!">Isapre Cruz Blanca</a>
+            </li>
+            <li>
+              <a href="#!">Isapre Banmedica</a>
+            </li>
+          </ul>
+        </div>
+        <!-- Grid column -->
+        <hr class="clearfix w-100 d-md-none">
+        <!-- Grid column -->
+        <div class="col-md-3 mx-auto">
+          <!-- Links -->
+          <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Doctores de planta 24/7</h5>
+          <ul class="list-unstyled">
+            <li>
+              <a href="#!">Med. Cirujano</a>
+            </li>
+            <li>
+              <a href="#!">Cardiólogo</a>
+            </li>
+            <li>
+              <a href="#!">Matrona</a>
+            </li>
+            <li>
+              <a href="#!">Infectólogo</a>
+            </li>
+          </ul>
+        </div>
+        <!-- Grid column -->
+      </div>
+      <!-- Grid row -->
+    </div>
+    <!-- Footer Links -->
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">&copy;2020
+      <strong> Grupo 3</strong>
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Fin Punto 8 proyecto / Footer -->
+</body>
+
+</html>
