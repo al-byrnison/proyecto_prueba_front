@@ -12,11 +12,12 @@
     crossorigin="anonymous"></script>
 </head>
 
-<body class="bg-dark">
+<body>
   <div class="container-fluid">
+    <!--navbar-->
     <div id="inicio">
-      <nav class="navbar navbar-expand-lg navbar-light bg-light ">
-        <a class="navbar-brand text-success" href="#">Red de Salud</a>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <a class="navbar-brand text-success" href="home.html">Red de Salud</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
           aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -27,7 +28,16 @@
               <a class="nav-link" href="home.html">Inicio</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="#">Perfil</a>
+              <a class="nav-link text-success" href="#">Mi Perfil</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="dmedicos.html">Mis datos medicos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="cargas.html">Mis cargas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="horas.html">Reserva horas</a>
             </li>
           </ul>
           <form class="form-inline my-2 my-lg-0" action="index.html">
@@ -36,62 +46,244 @@
         </div>
       </nav>
     </div>
-  </div>
-  <br>
-  <div class="container">
-    <div class="row">
-      <div class="card  col-12 col-md-4" style="width: 1emm;">
-        <br>
-        <img
-          src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260"
-          class=" img-thumbnail" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Nombre Paciente</h5>
-          <p class="card-text"><strong>19.999.999-9</strong>
-          </p>
+    <!--fin navbar-->
+
+    <!--perfil-->
+    <section id="perfil" class="p-md-5 mx-md-5 text-center text-lg-left jumbotron bg-transparent">
+      <div class="row">
+        <div class="col-md-12">
+          <br>
+          <h1 class="display-4">Mis datos personales</h1>
+          <br>
         </div>
-      </div>
-      <br>
-      <div class="card col-12 col-md-8">
-        <br>
-        <h5 class="card-header bg-info">Datos Personales</h5>
-        <div class="card-body">
-          <div class="row">
-            <div class="col-md-6">
-              <p class="card-text"><strong>Telefono: </strong>22 555 55 55</p>
-              <p class="card-text"><strong>Celular: </strong> +56 9 5555 5555</p>
-              <p class="card-text"><strong>Email: </strong>ejemplo@email.com</p>
-              <p class="card-text"><strong>Direccion: </strong>Av. no existe Nº S/N.</p>
-              <p class="card-text"><strong>comuna: </strong>Santiago</p>
-              <p class="card-text"><strong>Region: </strong>RM</p>
-              <br>
-            </div>
-            <div class="col-md-6">
-              <p class="card-text"><strong>Prevision: </strong>Fondo nacional de salud</p>
-              <p class="card-text"><strong>Fecha Ingreso: </strong>10/10/2019</p>
-              <p class="card-text"><strong>Fecha ultima atencion: </strong>15/07/2020</p>
-              <p class="card-text"><strong>Centro de atención: </strong>CHP - las rejas</p>
+        <div class="col-lg-4 px-3 mb-3 d-flex align-item-stretch">
+          <div class="card">
+            <div class="card-body m-1">
+              <div class="row mb-4">
+                <div class="col-lg-4 d-flex mb-2 align-items-center">
+                  <div class="avatar w-100 white d-flex justify-content-center align-items-center">
+                    <img
+                      src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260"
+                      class="img-fluid z-depth-1" alt="man avatar" />
+                  </div>
+                </div>
+                <div class="col-lg-8 text-muted d-flex flex-column justify-content-end pt-2">
+                  <p class="mb-1"><strong>Nombre Paciente</strong></p>
+                  <p class="mb-1">19.999.999-K</p>
+                </div>
+              </div>
+              <hr />
+              <div class="row">
+                <p class="text-muted card-text mt-2 px-4 mb-2"><strong>Tel: </strong>+56 9 9999 9999 <br>
+                  <strong>Email: </strong>ejemplo@email.com</p>
+              </div>
+              <div>
+                <!-- Enlace para abrir el modal -->
+                <button type="button" class="btn btn-info btn-sm" data-toggle="modal"
+                  data-target="#miModal">Editar</button>
+                <!-- Modal -->
+                <div id="miModal" class="modal fade" role="dialog">
+                  <div class="modal-dialog">
+                    <!-- Contenido del modal -->
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <p class="h4">Editar mis datos</p>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                      </div>
+                      <form>
+                        <div class="modal-body">
+                          <div class="form container">
+                            <div class="row">
+                              <div class="col-6">
+                                <input type="text" class="form-control" placeholder="Celular">
+                              </div>
+                              <div class="col-6">
+                                <input type="text" class="form-control" placeholder="Email">
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col-6">
+                                <input type="text" class="form-control" placeholder="Telefono">
+                              </div>
+                              <div class="col-6">
+                                <input type="text" class="form-control" placeholder="Direccion">
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col-6">
+                                <input type="text" class="form-control" placeholder="Comuna">
+                              </div>
+                              <div class="col-6">
+                                <input type="text" class="form-control" placeholder="Región">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-success" data-dismiss="modal">Listo</button>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--Fin modal-->
             </div>
           </div>
-          <br>
-          <a href="#" class="btn btn-info">Editar datos</a>
-
-
+        </div>
+        <!--tabla datos personales-->
+        <div class="col-lg-8 px-3 mb-3 d-flex align-item-stretch">
+          <div class="card">
+            <div class="card-body m-1">
+              <div class="row">
+                <table class="table">
+                  <tbody>
+                    <tr>
+                      <th scope="row"><strong>Telefono: </strong></th>
+                      <td>22 555 55 55</td>
+                      <th scope="row"><strong>Direccion: </strong></th>
+                      <td>Av. no existe Nº S/N.</td>
+                    </tr>
+                    <tr>
+                      <th scope="row"><strong>Comuna: </strong></th>
+                      <td>Santiago</td>
+                      <th scope="row"><strong>Región: </strong></th>
+                      <td>Metropilitana</td>
+                    </tr>
+                    <tr>
+                      <th scope="row"><strong>Prevision: </strong></th>
+                      <td>Fondo nacional de salud</td>
+                      <th scope="row"><strong>Centro de atención: </strong></th>
+                      <td>CHP Las Rejas</td>
+                    </tr>
+                    <tr>
+                      <th scope="row"><strong>Fecha de ingreso: </strong></th>
+                      <td>15-10-2018</td>
+                      <th scope="row"><strong>Ultima atención: </strong></th>
+                      <td>12-10-2020</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  </div>
+    </section>
+    <!--Datos personales-->
 
-  <!--scripts de boostrap-->
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
-    integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
-    crossorigin="anonymous"></script>
+    <!-- PUNTO 8 DEL TRABAJO/ Footer -->
+    <footer class="page-footer font-small bg-light">
+      <!-- Footer Links -->
+      <div class="container text-center text-md-left">
+        <!-- Grid row -->
+        <div class="row">
+          <!-- Grid column -->
+          <div class="col-md-3 mx-auto">
+            <!-- Links -->
+            <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Centros de Atención</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a href="#!">Hospital Barros Luco</a>
+              </li>
+              <li>
+                <a href="#!">Hospital Sotero del Rio</a>
+              </li>
+              <li>
+                <a href="#!">Clinica Las Condes</a>
+              </li>
+              <li>
+                <a href="#!">Clinica Tabancura</a>
+              </li>
+            </ul>
+          </div>
+          <!-- Grid column -->
+          <hr class="clearfix w-100 d-md-none">
+          <!-- Grid column -->
+          <div class="col-md-3 mx-auto">
+            <!-- Links -->
+            <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Ambulancias</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a href="#!">HELP</a>
+              </li>
+              <li>
+                <a href="#!">U. C. Movil</a>
+              </li>
+              <li>
+                <a href="#!">ACHS</a>
+              </li>
+              <li>
+                <a href="#!">Mutual de Seguridad</a>
+              </li>
+            </ul>
+          </div>
+          <!-- Grid column -->
+          <hr class="clearfix w-100 d-md-none">
+          <!-- Grid column -->
+          <div class="col-md-3 mx-auto">
+            <!-- Links -->
+            <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Previsión de Salud</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a href="#!">Fonasa</a>
+              </li>
+              <li>
+                <a href="#!">Isapre Colmena</a>
+              </li>
+              <li>
+                <a href="#!">Isapre Cruz Blanca</a>
+              </li>
+              <li>
+                <a href="#!">Isapre Banmedica</a>
+              </li>
+            </ul>
+          </div>
+          <!-- Grid column -->
+          <hr class="clearfix w-100 d-md-none">
+          <!-- Grid column -->
+          <div class="col-md-3 mx-auto">
+            <!-- Links -->
+            <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Doctores 24/7</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a href="#!">Med. Cirujano</a>
+              </li>
+              <li>
+                <a href="#!">Cardiólogo</a>
+              </li>
+              <li>
+                <a href="#!">Matrona</a>
+              </li>
+              <li>
+                <a href="#!">Infectólogo</a>
+              </li>
+            </ul>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
+      </div>
+      <!-- Footer Links -->
+      <!-- Copyright -->
+      <div class="footer-copyright text-center py-3">&copy;2020
+        <strong> Grupo 3</strong>
+      </div>
+      <!-- Copyright -->
+    </footer>
+    <!-- Fin Punto 8 proyecto / Footer -->
+
+
+    <!--scripts de boostrap-->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
+      integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
+      crossorigin="anonymous"></script>
 </body>
 
 </html>

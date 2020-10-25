@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home red de salud</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+    integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+    crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <!--navbar-->
+  <div id="inicio">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+      <a class="navbar-brand text-success" href="#">Red de Salud</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+        aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+          <li class="nav-item">
+            <a class="nav-link text-success" href="#">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="perfil.html">Mi Perfil</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="dmedicos.html">Mis datos medicos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="cargas.html">Mis cargas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="horas.html">Reserva horas</a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0" action="index.html">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Cerrar sesion</button>
+        </form>
+      </div>
+    </nav>
+  </div>
+  <br>
+  <!--fin navbar-->
+  <!--Home main-->
+  <div class="container-fluid my-5 p-5 z-depth-1">
+    <!--Section: Content-->
+    <section class="dark-grey-text">
+      <!-- Section heading -->
+      <h2 class="text-center font-weight-bold mb-4 pb-2 h1">Bienvenido <span class="text-secondary display-4">Nombre de
+          usuario</span>
+      </h2>
+      <!-- Section description -->
+      <p class="text-center lead grey-text mx-auto mb-5">En nuestro sistema podras agendar tus horas medicas, revisar
+        examenes y mucho mas...</p>
+      <!-- Grid row -->
+      <div class="row">
+        <!-- Grid column -->
+        <div class="col-lg-6 text-center text-lg-left jumbotron bg-transparent">
+          <img class="img-fluid" src="https://cdn.pixabay.com/photo/2017/01/29/21/16/nurse-2019420_960_720.jpg"
+            alt="Sample image">
+        </div>
+        <div class="col-lg-6">
+          <div class="row mb-3">
+            <div class="col-xl-12 col-md-11 col-12">
+              <h5 class="font-weight-bold mb-3">Mis cargas familiares</h5>
+              <div class="container bg-white">
+                <div class="table">
+                  <table class="table table-bordered">
+                    <thead>
+                      <tr class="bg-success text-light">
+                        <th>Nombre</th>
+                        <th>Rut</th>
+                        <th>Parentesco</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Nombre Usuario</td>
+                        <td>19.999.999-K</td>
+                        <td>Titular</td>
+                      </tr>
+                      <tr>
+                        <td>Nombre hijo</td>
+                        <td>23.999.999-0</td>
+                        <td>Hijo</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row mb-3">
+            <div class="col-xl-12 col-md-11 col-12">
+              <h5 class="font-weight-bold mb-3">Mis últimos examenes</h5>
+              <div class="container bg-white">
+                <div class="table">
+                  <table class="table table-bordered">
+                    <thead>
+                      <tr class="bg-info text-light">
+                        <th>Nombre</th>
+                        <th>Fecha</th>
+                        <th>Estado</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Triglicéridos</td>
+                        <td>23-10-2020</td>
+                        <td>En espera de resultados</td>
+                      </tr>
+                      <tr>
+                        <td>Hemograma</td>
+                        <td>23-10-2020</td>
+                        <td>En espera de resultados</td>
+                      </tr>
+                      <tr>
+                        <td>Perfil lipidico</td>
+                        <td>23-10-2020</td>
+                        <td>En espera de resultados</td>
+                      </tr>
+                      <tr>
+                        <td>Holter de presión</td>
+                        <td>10-10-2020</td>
+                        <td>Entregado</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <!--Fin home-->
+
+
+  <!-- PUNTO 8 DEL TRABAJO/ Footer -->
+  <footer class="page-footer font-small bg-light">
+    <!-- Footer Links -->
+    <div class="container text-center text-md-left">
+      <!-- Grid row -->
+      <div class="row">
+        <!-- Grid column -->
+        <div class="col-md-3 mx-auto">
+          <!-- Links -->
+          <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Centros de Atención</h5>
+          <ul class="list-unstyled">
+            <li>
+              <a href="#!">Hospital Barros Luco</a>
+            </li>
+            <li>
+              <a href="#!">Hospital Sotero del Rio</a>
+            </li>
+            <li>
+              <a href="#!">Clinica Las Condes</a>
+            </li>
+            <li>
+              <a href="#!">Clinica Tabancura</a>
+            </li>
+          </ul>
+        </div>
+        <!-- Grid column -->
+        <hr class="clearfix w-100 d-md-none">
+        <!-- Grid column -->
+        <div class="col-md-3 mx-auto">
+          <!-- Links -->
+          <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Ambulancias</h5>
+          <ul class="list-unstyled">
+            <li>
+              <a href="#!">HELP</a>
+            </li>
+            <li>
+              <a href="#!">U. C. Movil</a>
+            </li>
+            <li>
+              <a href="#!">ACHS</a>
+            </li>
+            <li>
+              <a href="#!">Mutual de Seguridad</a>
+            </li>
+          </ul>
+        </div>
+        <!-- Grid column -->
+        <hr class="clearfix w-100 d-md-none">
+        <!-- Grid column -->
+        <div class="col-md-3 mx-auto">
+          <!-- Links -->
+          <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Previsión de Salud</h5>
+          <ul class="list-unstyled">
+            <li>
+              <a href="#!">Fonasa</a>
+            </li>
+            <li>
+              <a href="#!">Isapre Colmena</a>
+            </li>
+            <li>
+              <a href="#!">Isapre Cruz Blanca</a>
+            </li>
+            <li>
+              <a href="#!">Isapre Banmedica</a>
+            </li>
+          </ul>
+        </div>
+        <!-- Grid column -->
+        <hr class="clearfix w-100 d-md-none">
+        <!-- Grid column -->
+        <div class="col-md-3 mx-auto">
+          <!-- Links -->
+          <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Doctores 24/7</h5>
+          <ul class="list-unstyled">
+            <li>
+              <a href="#!">Med. Cirujano</a>
+            </li>
+            <li>
+              <a href="#!">Cardiólogo</a>
+            </li>
+            <li>
+              <a href="#!">Matrona</a>
+            </li>
+            <li>
+              <a href="#!">Infectólogo</a>
+            </li>
+          </ul>
+        </div>
+        <!-- Grid row -->
+      </div>
+      <!-- Footer Links -->
+      <!-- Copyright -->
+      <div class="footer-copyright text-center py-3">&copy;2020
+        <strong> Grupo 3</strong>
+      </div>
+      <!-- Copyright -->
+  </footer>
+  <!-- Fin Punto 8 proyecto / Footer -->
+
+
+
+
+
+  <!--script boostrap-->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
+    integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
