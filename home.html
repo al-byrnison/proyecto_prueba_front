@@ -13,8 +13,9 @@
 </head>
 
 <body>
+  <!--navbar-->
   <div id="inicio">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light ">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
       <a class="navbar-brand text-success" href="#">Red de Salud</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
         aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
@@ -32,7 +33,10 @@
             <a class="nav-link" href="dmedicos.html">Mis datos medicos</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="horamedica.html">Reserva horas</a>
+            <a class="nav-link" href="cargas.html">Mis cargas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="horas.html">Reserva horas</a>
           </li>
         </ul>
         <form class="form-inline my-2 my-lg-0" action="index.html">
@@ -41,9 +45,102 @@
       </div>
     </nav>
   </div>
-
-
-
+  <br>
+  <!--fin navbar-->
+  <!--Home main-->
+  <div class="container-fluid my-5 p-5 z-depth-1">
+    <!--Section: Content-->
+    <section class="dark-grey-text">
+      <!-- Section heading -->
+      <h2 class="text-center font-weight-bold mb-4 pb-2 h1">Bienvenido <span class="text-secondary display-4">Nombre de
+          usuario</span>
+      </h2>
+      <!-- Section description -->
+      <p class="text-center lead grey-text mx-auto mb-5">En nuestro sistema podras agendar tus horas medicas, revisar
+        examenes y mucho mas...</p>
+      <!-- Grid row -->
+      <div class="row">
+        <!-- Grid column -->
+        <div class="col-lg-6 text-center text-lg-left jumbotron bg-transparent">
+          <img class="img-fluid" src="https://cdn.pixabay.com/photo/2017/01/29/21/16/nurse-2019420_960_720.jpg"
+            alt="Sample image">
+        </div>
+        <div class="col-lg-6">
+          <div class="row mb-3">
+            <div class="col-xl-12 col-md-11 col-12">
+              <h5 class="font-weight-bold mb-3">Mis cargas familiares</h5>
+              <div class="container bg-white">
+                <div class="table">
+                  <table class="table table-bordered">
+                    <thead>
+                      <tr class="bg-success text-light">
+                        <th>Nombre</th>
+                        <th>Rut</th>
+                        <th>Parentesco</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Nombre Usuario</td>
+                        <td>19.999.999-K</td>
+                        <td>Titular</td>
+                      </tr>
+                      <tr>
+                        <td>Nombre hijo</td>
+                        <td>23.999.999-0</td>
+                        <td>Hijo</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row mb-3">
+            <div class="col-xl-12 col-md-11 col-12">
+              <h5 class="font-weight-bold mb-3">Mis últimos examenes</h5>
+              <div class="container bg-white">
+                <div class="table">
+                  <table class="table table-bordered">
+                    <thead>
+                      <tr class="bg-info text-light">
+                        <th>Nombre</th>
+                        <th>Fecha</th>
+                        <th>Estado</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Triglicéridos</td>
+                        <td>23-10-2020</td>
+                        <td>En espera de resultados</td>
+                      </tr>
+                      <tr>
+                        <td>Hemograma</td>
+                        <td>23-10-2020</td>
+                        <td>En espera de resultados</td>
+                      </tr>
+                      <tr>
+                        <td>Perfil lipidico</td>
+                        <td>23-10-2020</td>
+                        <td>En espera de resultados</td>
+                      </tr>
+                      <tr>
+                        <td>Holter de presión</td>
+                        <td>10-10-2020</td>
+                        <td>Entregado</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <!--Fin home-->
 
 
   <!-- PUNTO 8 DEL TRABAJO/ Footer -->
