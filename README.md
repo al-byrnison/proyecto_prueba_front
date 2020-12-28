@@ -16,7 +16,7 @@ Proyecto creado para prueba curso python fullstack unidad 1 fundamentos de html.
 
 //Pasos para utilización
 
-//ingresar directamente a https://alf-byrnison.github.io/proyecto_prueba_front/
+//ingresar directamente a https://al-byrnison.github.io/proyecto_prueba_front/
 
 //En la página principal tendrá una sección de noticias y links de interés.
 //Para login en la página de acceso 
